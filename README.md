@@ -1,2 +1,2 @@
 # go-cms
-Content Management System (CMS) with Go language (golang)
+Sistema manejador de contenidos (CMS) creado con el lenguaje de programación Go (golang).
