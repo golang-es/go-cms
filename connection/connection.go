@@ -4,7 +4,6 @@ package connection
 
 import (
     "database/sql"
-    "log"
     "sync"
 )
 
@@ -40,20 +39,7 @@ func GetNameEngine() string {
     return nameEngine
 }
 
-// Establece el motor al que se va a conectar
-func setEngine(e string) {
-    switch e {
-    case POSTGRESQL:
-        s = getInstancePostgresql()
-    case MYSQL:
-        s = getInstanceMysql()
-    default:
-        log.Fatal("No se puede registrar ese motor")
-    }
-    setConfigurationEngine()
-}
-
-// Método que devuelve una única instancia de postgresql
+// Devuelve una única instancia de postgresql
 func getInstancePostgresql() *postgresql {
     once.Do(func() {
         p = new(postgresql)
@@ -62,7 +48,7 @@ func getInstancePostgresql() *postgresql {
     return p
 }
 
-// Método que devuelve una única instancia de mysql
+// Devuelve una única instancia de mysql
 func getInstanceMysql() *mysql {
     once.Do(func() {
         m = &mysql{}

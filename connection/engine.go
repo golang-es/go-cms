@@ -1,5 +1,7 @@
 package connection
 
+import "log"
+
 type engine struct {
     server   string
     port     string
@@ -31,4 +33,26 @@ func (e *engine) setDataBase(database string) {
 
 func (e *engine) setSslMode(sslmode string) {
     e.sslmode = sslmode
+}
+
+func setConfigurationEngine() {
+    s.setServer(config.Server)
+    s.setPort(config.Port)
+    s.setUser(config.User)
+    s.setPassword(config.Password)
+    s.setDataBase(config.Database)
+    s.setSslMode(config.Sslmode)
+}
+
+// Establece el motor al que se va a conectar
+func setEngine(e string) {
+    switch e {
+    case POSTGRESQL:
+        s = getInstancePostgresql()
+    case MYSQL:
+        s = getInstanceMysql()
+    default:
+        log.Fatal("No se puede registrar ese motor")
+    }
+    setConfigurationEngine()
 }

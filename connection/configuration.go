@@ -18,7 +18,8 @@ type configuration struct {
 
 // Lee la información de un archivo de configuración json config.json
 func getConfigurationFile() {
-    file, err := os.Open("../config.json")
+    // La ruta debe ser sin ../
+    file, err := os.Open("./config/config.json")
     if err != nil {
         log.Fatal(err)
     }
@@ -28,13 +29,4 @@ func getConfigurationFile() {
         log.Fatal(err)
     }
     setEngine(config.Engine)
-}
-
-func setConfigurationEngine() {
-    s.setServer(config.Server)
-    s.setPort(config.Port)
-    s.setUser(config.User)
-    s.setPassword(config.Password)
-    s.setDataBase(config.Database)
-    s.setSslMode(config.Sslmode)
 }
