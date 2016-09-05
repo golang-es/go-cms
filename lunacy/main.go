@@ -3,11 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/golang-es/go-cms/models"
+	"github.com/golang-es/go-cms/dao/executedao"
 )
 
 func main() {
-	rol := models.Rol{ID: 4}
-	rol.GetByID()
+	rol, _ := executedao.GetByIDRol(1)
 	fmt.Println(rol)
 }
