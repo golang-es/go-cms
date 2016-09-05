@@ -9,9 +9,15 @@ import (
 )
 
 var (
-	once   sync.Once
-	metadataDAO interfaces.MetadataDAO
-	rolDAO interfaces.RolDAO
+	once            sync.Once
+	metadataDAO     interfaces.MetadataDAO
+	metadataTypeDAO interfaces.MetadataTypeDAO
+	moduleDAO       interfaces.ModuleDAO
+	moduleRolDAO    interfaces.ModuleRolDAO
+	postDAO         interfaces.PostDAO
+	rolDAO          interfaces.RolDAO
+	rolUserDAO		interfaces.RolUserDAO
+	userDAO			interfaces.UserDAO
 )
 
 func init() {
@@ -23,10 +29,19 @@ func init() {
 // initDAO inicia los DAO dependiendo de la configuración de la conexión
 func initDAO() {
 	log.Println("Se inician los DAO...")
+
 	switch configuration.Config.Engine {
+
 	case "postgresql":
-		rolDAO = psql.RolDAOPSQL{}
 		metadataDAO = psql.MetadataDAOPSQL{}
+		metadataTypeDAO = psql.MetadataTypeDAOPSQL{}
+		moduleDAO = psql.ModuleDAOPSQL{}
+		moduleRolDAO = psql.ModuleRolDAOPSQL{}
+		postDAO = psql.PostDAOPSQL{}
+		rolDAO = psql.RolDAOPSQL{}
+		rolUserDAO = psql.RolUserDAOPSQL{}
+		userDAO = psql.UserDAOPSQL{}
+
 	default:
 		log.Fatal("No existe el motor de persistencia solicitado")
 	}

@@ -36,7 +36,7 @@ func (r RolDAOPSQL) DeleteRol(rol *models.Rol) error {
 	}
 
 	if i, _ := row.RowsAffected(); i == 1 {
-		*rol = models.Rol{}
+		rol = &models.Rol{}
 	}
 	return nil
 }

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/alexyslozada/accounting-go/dao/configuration"
+	"github.com/golang-es/go-cms/dao/configuration"
 	// El paquete lib/pq es necesario para la conexión a postgresql
 	_ "github.com/lib/pq"
 )
@@ -21,4 +21,3 @@ func get() *sql.DB {
 	}
 	return db
 }
-

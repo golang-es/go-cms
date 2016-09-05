@@ -32,7 +32,7 @@ type configuration struct {
 
 // Lee la información del archivo de configuración config.json
 func getConfigurationFile() {
-	log.Println("Se ha llamado getconfigurationfile")
+	log.Println("Se ha llamado getconfigurationfile...")
 	// La ruta del archivo debe ser una carpeta
 	// al mismo nivel del ejecutable principal (main)
 	file, err := os.Open("./config/connection.json")

@@ -2,7 +2,7 @@ package psql
 
 import "github.com/golang-es/go-cms/models"
 
-type MetadataDAOPSQL struct {}
+type MetadataDAOPSQL struct{}
 
 // InsertMetadata Inserta un registro en la BD
 func (m MetadataDAOPSQL) InsertMetadata(metadata *models.Metadata) error {
@@ -36,7 +36,7 @@ func (m MetadataDAOPSQL) DeleteMetadata(metadata *models.Metadata) error {
 	}
 
 	if i, _ := row.RowsAffected(); i == 1 {
-		*metadata = models.Metadata{}
+		metadata = &models.Metadata{}
 	}
 	return nil
 }
@@ -56,7 +56,7 @@ func (m MetadataDAOPSQL) GetByIDMetadata(id int) (*models.Metadata, error) {
 // GetAllMetadata obtiene todos los registros de la BD
 func (m MetadataDAOPSQL) GetAllMetadata() ([]models.Metadata, error) {
 	query := "SELECT id, post_id, metadata_type_id, content, created_at, updated_at FROM metadatas"
-	var metadatas []Metadata
+	var metadatas []models.Metadata
 	db := get()
 	defer db.Close()
 
