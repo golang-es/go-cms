@@ -1,0 +1,30 @@
+{
+  "name": "go-cms",
+  "version": "1.0.0",
+  "description": "Sistema manejador de contenidos (CMS) creado con el lenguaje de programación Go (golang).",
+  "main": "main.go",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/golang-es/go-cms.git"
+  },
+  "keywords": [],
+  "author": "Team Golang-es",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/golang-es/go-cms/issues"
+  },
+  "homepage": "https://github.com/golang-es/go-cms#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}
