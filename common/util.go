@@ -3,7 +3,6 @@ package common
 import (
 	"net/http"
 	"log"
-	"image/jpeg"
 	"encoding/json"
 )
 
@@ -17,7 +16,7 @@ type(
 		Data appError `json:"data"`
 	}
 )
-//TODO: DisplayAppError - En estos momentos cuando ocurre un error la app devuelve un jason que indica el error, se debe cambiar para que de una respuesta HTML.
+//TODO: DisplayAppError - En estos momentos cuando ocurre un error la app devuelve un json que indica el error, se debe cambiar para que de una respuesta HTML.
 func DisplayAppError(w http.ResponseWriter, handlerError error, message string, code int)  {
 	errObj := appError{
 		Error: handlerError.Error(),
