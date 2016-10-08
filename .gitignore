@@ -9,6 +9,7 @@ _test
 .idea/
 docs/
 node_modules/
+resources/icons/
 
 # Files compiles gulp
 public/css/styles.css
