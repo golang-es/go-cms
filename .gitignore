@@ -10,6 +10,10 @@ _test
 docs/
 node_modules/
 
+# Files compiles gulp
+public/css/styles.css
+public/css/styles.css.map
+
 # Architecture specific extensions/prefixes
 *.[568vq]
 [568vq].out
