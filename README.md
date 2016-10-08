@@ -1,6 +1,14 @@
 # go-cms
 Sistema manejador de contenidos (CMS) creado con el lenguaje de programación Go (golang).
 
+## Requerimientos
+
+### Frontend
+Se requiere ed-grid, se debe ejecutar el siguiente comando desde la carpeta `resources/libraries/`:
+```
+git clone https://github.com/escueladigital/ed-grid.git -b dev --single-branch
+```
+
 ## Convenciones para la base de datos
 
 ### El nombre de las tablas
