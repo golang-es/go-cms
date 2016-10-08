@@ -61,6 +61,12 @@
         background-color: darken(#284984, 10%);
       }
     }
+    .google-plus{
+      background-color: #C92D22;
+      &:hover{
+        background-color: darken(#C92D22, 10%);
+      }
+    }
     .twitter{
       background-color: #00ABE6;
       &:hover{
