@@ -9,6 +9,7 @@ Sistema manejador de contenidos (CMS) creado con el lenguaje de programación Go
 - Go >= 1.7 https://golang.org
 - Git >= 2.8 https://git-scm.com/downloads
 - Node.js >= 4.6.0 https://nodejs.org
+- PostgreSQL https://www.postgresql.org
 - EDgrid >= 2.0; para obtener EDgrid se debe ejecutar el siguiente comando desde la carpeta `resources/libraries/`:
 ```
 git clone https://github.com/escueladigital/ed-grid.git -b dev --single-branch
