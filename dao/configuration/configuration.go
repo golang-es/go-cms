@@ -10,8 +10,13 @@ import (
 var (
 	// Config Configuración de la conexión
 	Config *configuration
+	pathFileConfig = "./config/connection.json"
 	once   sync.Once
 )
+
+func SetPathFileConfig(path string)  {
+	pathFileConfig = path
+}
 
 func init() {
 	once.Do(func() {
@@ -35,7 +40,7 @@ func getConfigurationFile() {
 	log.Println("Se ha llamado getconfigurationfile...")
 	// La ruta del archivo debe ser una carpeta
 	// al mismo nivel del ejecutable principal (main)
-	file, err := os.Open("./config/connection.json")
+	file, err := os.Open(pathFileConfig)
 	if err != nil {
 		log.Fatal(err)
 		return
