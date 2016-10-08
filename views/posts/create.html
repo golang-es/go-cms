@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nueva publicación</title>
+</head>
+<body>
+    <div class="header">
+        <div class="appname">GoCMS</div>
+        <div class="menu">-</div>
+    </div>
+    <div class="page-wrapper">
+        <h1>Nueva publicación</h1>
+        <form action="/posts/create" method="post" enctype="multipart/form-data">
+            <div class="input-wrapper">
+                <input type="text" name="title" id="title" placeholder="Título" maxlength="140">
+            </div>
+            <div class="input-wrapper">
+                <input type="text" name="slug" id="slug" placeholder="Slug" maxlength="140">
+            </div>
+            <div class="input-wrapper">
+                <input type="date" name="published_at" id="published_at" placeholder="Fecha de publicación">
+            </div>
+            <div class="input-wrapper">
+                <input type="file" name="poster" id="poster" placeholder="Poster">
+            </div>
+            <div class="input-wrapper">
+                <input type="file" name="Banner" id="Banner" placeholder="Banner">
+            </div>
+            <div class="input-wrapper">
+                <textarea name="body" id="body" rows="8" cols="40" placeholder="Contenido"></textarea>
+            </div>
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="redes-sociales">
+            <div class="facebook"></div>
+            <div class="twitter"></div>
+            <div class="youtube"></div>
+        </div>
+    </footer>
+</body>
+</html>
