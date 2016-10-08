@@ -1,10 +1,15 @@
 # go-cms
 Sistema manejador de contenidos (CMS) creado con el lenguaje de programación Go (golang).
 
-## Requerimientos
+## Requerimientos para producción
+- PostgreSQL https://www.postgresql.org
 
-### Frontend
-Se requiere ed-grid, se debe ejecutar el siguiente comando desde la carpeta `resources/libraries/`:
+## Requerimientos para desarrollo
+- Conexión a internet
+- Go >= 1.7 https://golang.org
+- Git >= 2.8 https://git-scm.com/downloads
+- Node.js >= 4.6.0 https://nodejs.org
+- EDgrid >= 2.0; para obtener EDgrid se debe ejecutar el siguiente comando desde la carpeta `resources/libraries/`:
 ```
 git clone https://github.com/escueladigital/ed-grid.git -b dev --single-branch
 ```
@@ -16,7 +21,7 @@ El nombre de las tablas deberán estar en inglés, plural y en minúsculas.
 
 Si el nombre de una tabla tiene más de una palabra, éstas deberán estar separadas por un guión bajo (`_`).
 
-### El primary key
+### La primary key
 El campo primary key de toda tabla deberá llamarse `id`.
 
 ### Los campos created_at y updated_at
