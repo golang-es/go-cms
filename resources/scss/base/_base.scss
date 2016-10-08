@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+body{
+  color: $color1;
+  display: flex;
+  font-family: "Oxygen";
+  font-size: 1rem;
+}
+form{
+  margin: 0;
+}
+h1,h2,h3{
+  color: $color4;
+  font-family: "Oswald";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h2{
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+h3{
+  font-size: 1.3rem;
+}
+html{
+  font-size: 16px;
+}
+input,
+textarea{
+  border: 1px solid $color5;
+  color: $color1;
+  display: block;
+  font-family: 'Oswald';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  max-width: 100%;
+  padding: 8px;
+  width: 100%;
+  &::placeholder{
+    color: lighten($color5, 30%);
+    font-weight: 300;
+  }
+}
+textarea{
+  height: 20em;
+}

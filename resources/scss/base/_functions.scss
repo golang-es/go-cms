@@ -1,0 +1,4 @@
+@function iconPath($img) {
+  $imgPath: "../icons";
+  @return url("#{$imgPath}/#{$img}");
+}

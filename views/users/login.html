@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Login|GoCMS</title>
+    <link rel="stylesheet" href="https://file.myfontastic.com/6tytmZDrvqzcmhyZ5cHNBJ/icons.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
 </head>
-<body>
-    <div class="login-form">
+<body class="page-login">
+    <div class="page-wrapper">
         <h1>GoCMS</h1>
-        <form action="/login" method="post">
+
+        <form action="/login" class="login-form" method="post">
             <h2>Iniciar sesión</h2>
             <div class="input-wrapper">
-                <input type="text" name="username" id="username" placeholder="Nombre de usuario" maxlength="255">
+                <span class="icon i-user"></span>
+                <input type="text" name="username" id="username" class="username" placeholder="Nombre de usuario" maxlength="255">
             </div>
             <div class="input-wrapper">
-                <input type="password" name="password" id="password" placeholder="Contraseña" maxlength="512">
+                <span class="icon i-key"></span>
+                <input type="password" name="password" id="password" class="password" placeholder="Contraseña" maxlength="512">
             </div>
-            <button type="submit">Ingresar</button>
+            <button type="submit" class="button button--primary">Ingresar</button>
+
+            <div class="options-wrapper">
+                <a href="/remember-password">Recordar contraseña</a>
+                <a href="/signin">Crear una cuenta</a>
+            </div>
+
+            <div class="login-redes">
+                <a href="#" class="facebook">
+                    <span class="i-facebook"></span>
+                    Entrar con Facebook
+                </a>
+                <a href="#" class="twitter">
+                    <span class="i-twitter"></span>
+                    Entrar con Twitter
+                </a>
+            </div>
+
         </form>
-        <div class="options-wrapper">
-            <a href="/remember-password">Recordar contraseña</a>
-            <a href="/signin">Crear una cuenta</a>
-        </div>
-        <div class="login-redes">
-            <a href="#" class="facebook">Facebook</a>
-            <a href="#" class="twitter">Twitter</a>
-        </div>
     </div>
 </body>
 </html>

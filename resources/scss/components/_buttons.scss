@@ -1,0 +1,28 @@
+a.button,
+.button{
+  align-items: center;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Oswald';
+  font-size: 1rem;
+  justify-content: center;
+  line-height: 2;
+  margin: 0;
+  padding: 0 20px;
+  text-decoration: none;
+  width: 100%;
+  &:hover{
+    color: #fff;
+    text-decoration: none;
+  }
+  &--primary{
+    background-color: $color4;
+    &:hover,
+    &:active,
+    &.active{
+      background-color: darken($color4, 10);
+    }
+  }
+}
