@@ -2,7 +2,7 @@
 Sistema manejador de contenidos (CMS) creado con el lenguaje de programación Go (golang).
 
 ## Requerimientos para producción
-- PostgreSQL https://www.postgresql.org
+- PostgreSQL >= 9.5 https://www.postgresql.org
 
 ## Requerimientos para desarrollo
 - Conexión a internet

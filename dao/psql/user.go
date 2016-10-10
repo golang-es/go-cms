@@ -75,3 +75,25 @@ func (u UserDAOPSQL) GetAllUser() ([]models.User, error) {
 	}
 	return users, nil
 }
+
+// GetLogin busca un usuario por email y password
+func (u UserDAOPSQL) GetLogin(e string, p string) (*models.User, error) {
+	query := "SELECT id, name, lastname, email, password, created_at, updated_at FROM users WHERE email = $1 and password = $2"
+	user := &models.User{}
+	db := get()
+	defer db.Close()
+
+	err := db.QueryRow(query, e, p).Scan(&user.ID, &user.Name, &user.Lastname, &user.Email, &user.Password, &user.CreatedAt, &user.UpdatedAt)
+	return user, err
+}
+
+// GetUserByEmail busca un usuario por email
+func (u UserDAOPSQL) GetUserByEmail(e string) (*models.User, error) {
+	query := "SELECT id, name, lastname, email, password, created_at, updated_at FROM users WHERE email = $1"
+	user := &models.User{}
+	db := get()
+	defer db.Close()
+
+	err := db.QueryRow(query, e).Scan(&user.ID, &user.Name, &user.Lastname, &user.Email, &user.Password, &user.CreatedAt, &user.UpdatedAt)
+	return user, err
+}

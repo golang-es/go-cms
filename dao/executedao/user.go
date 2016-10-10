@@ -26,3 +26,13 @@ func GetByIDUser(i int) (*models.User, error) {
 func GetAllUser() ([]models.User, error) {
 	return userDAO.GetAllUser()
 }
+
+// GetLogin llama la función getlogin del dao
+func GetLogin(e string, p string) (*models.User, error) {
+	return userDAO.GetLogin(e, p)
+}
+
+// GetUserByEmail llama la función getuserbyemail del dao
+func GetUserByEmail(e string) (*models.User, error) {
+	return userDAO.GetUserByEmail(e)
+}

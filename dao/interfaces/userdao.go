@@ -8,4 +8,6 @@ type UserDAO interface {
 	DeleteUser(u *models.User) error
 	GetByIDUser(i int) (*models.User, error)
 	GetAllUser() ([]models.User, error)
+	GetLogin(e string, p string) (*models.User, error)
+	GetUserByEmail(e string) (*models.User, error)
 }
