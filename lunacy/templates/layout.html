@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Probando templates con unrolled/render</title>
+    <!-- Render the partial template called `css-$current_template` here -->
+    {{ partial "css" }}
+</head>
+<body>
+    <div>El template <code>layout.html</code> ha procesado el template <code>{{ current }}</code> obteniendo como resultado lo siguiente:</div>
+    <!-- render the partial template called `header-$current_template` here -->
+    {{ partial "header" }}
+    <!-- Render the current template here -->
+    {{ yield }}
+    <!-- render the partial template called `footer-$current_template` here -->
+    {{ partial "footer" }}
+</body>
+</html>
