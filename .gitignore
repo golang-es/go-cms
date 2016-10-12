@@ -6,7 +6,6 @@ main
 
 # Folders
 _obj
-_test
 .idea/
 docs/
 node_modules/
