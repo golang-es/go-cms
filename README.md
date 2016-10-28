@@ -10,9 +10,25 @@ Sistema manejador de contenidos (CMS) creado con el lenguaje de programación Go
 - Git >= 2.8 https://git-scm.com/downloads
 - Node.js >= 4.6.0 https://nodejs.org
 - PostgreSQL >= 9.5 https://www.postgresql.org
-- EDgrid >= 2.0; para obtener EDgrid se debe ejecutar el siguiente comando desde la carpeta `resources/libraries/`:
+
+### Obtener los submódulos
+Desde la carpeta raíz del proyecto ejecutar los siguientes comandos para obtener los submódulos git:
 ```
-git clone https://github.com/escueladigital/ed-grid.git -b dev --single-branch
+git submodule init
+git submodule update
+```
+
+### Ejecutar las tareas de gulp
+Desde la carpeta raíz del proyecto:
+
+1. Descargar las dependencias del `package.json`:
+```
+npm install
+```
+
+2. Ejecutar el siguiente comando para correr las tareas de gulp:
+```
+./node_modules/.bin/gulp
 ```
 
 ## Convenciones para la base de datos
