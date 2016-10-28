@@ -1,0 +1,3 @@
+[submodule "resources/libraries/ed-grid"]
+	path = resources/libraries/ed-grid
+	url = https://github.com/escueladigital/EDgrid/tree/dev
