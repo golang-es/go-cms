@@ -3,11 +3,21 @@
 *::before{
   box-sizing: border-box;
 }
+a,
+a:hover{
+  text-decoration: none;
+}
 body{
   color: $color1;
   display: flex;
-  font-family: "Merriweather";
+  flex-direction: column;
+  font-family: "Merriweather", "serif";
   font-size: 1rem;
+  font-weight: 300;
+}
+footer{
+  background-color: $color1;
+  color: $color3;
 }
 form{
   margin: 0;
@@ -15,19 +25,22 @@ form{
 h1,h2,h3{
   color: $color4;
   font-family: "Oswald";
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 h2{
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-family: "Merriweather";
+  font-size: 18px;
+  border-bottom: 1px solid $color4;
+  font-style: italic;
+  padding-bottom: 4px;
+  padding-top: 0.5em;
 }
 h3{
-  font-size: 1.3rem;
+  font-size: 16px;
 }
 html{
   font-size: 16px;

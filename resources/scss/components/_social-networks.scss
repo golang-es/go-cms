@@ -1,0 +1,14 @@
+.social-networks{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  &__item{
+    color: $color3;
+    font-size: 20px;
+    margin: 0 0.5em;
+    &:hover{
+      color: $color2;
+    }
+  }
+}

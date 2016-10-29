@@ -1,0 +1,38 @@
+.post-metadata{
+  align-items: center;
+  border-bottom: 1px solid $color5;
+  display: flex;
+  font-family: "Oswald";
+  font-weight: 400;
+  justify-content: space-between;
+  margin: 8px 0 16px 0;
+  padding-bottom: 8px;
+
+  .author{
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    &__image{
+      border-radius: 50%;
+      height: 36px;
+      margin-right: 4px;
+      overflow: hidden;
+      width: 36px;
+    }
+  }
+
+  .published_at{
+    background-color: $color1;
+    color: $color3;
+    text-align: center;
+    &__day{
+      font-size: 16px;
+      font-weight: 700;
+    }
+    &__month-year{
+      font-size: 12px;
+      font-weight: 300;
+      padding: 0 2px;
+    }
+  }
+}

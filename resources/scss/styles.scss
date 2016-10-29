@@ -1,5 +1,5 @@
 // Fonts
-@import "https://fonts.googleapis.com/css?family=Oswald:300,400,700|Merriweather:300,400,700";
+@import "https://fonts.googleapis.com/css?family=Oswald:300,400,700|Merriweather:300,400,400i,700";
 
 // EDgrid
 $cssCore: false;
@@ -14,6 +14,10 @@ $devMode: false;
 
 // Components
 @import "components/buttons";
+@import "components/header";
+@import "components/page-wrapper";
+@import "components/post-metadata";
+@import "components/social-networks";
 
 // Pages
 @import "pages/login";
