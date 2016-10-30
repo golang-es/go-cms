@@ -1,8 +1,8 @@
 .page-posts{
   .page-wrapper{
-    @include grid('.post', 1, 2, 3);
+    @include grid('.post', 1, 2, 3, $gutter: 2rem);
     margin: auto;
-    padding-top: 0;
+    padding-top: 2rem;
   }
 
   .post{

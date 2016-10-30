@@ -1,3 +1,12 @@
+.page-post-show{
+  .page-wrapper{
+    margin: 0 auto;
+    max-width: 768px;
+  }
+}
+
 .post-banner{
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+  max-height: 350px;
+  overflow: hidden;
 }
