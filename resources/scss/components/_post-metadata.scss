@@ -14,25 +14,29 @@
     font-size: 16px;
     &__image{
       border-radius: 50%;
-      height: 36px;
-      margin-right: 4px;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, .16), 0 0 10px 0 rgba(0, 0, 0, .12);
+      height: 48px;
+      margin-right: 8px;
       overflow: hidden;
-      width: 36px;
+      width: 48px;
     }
   }
 
   .published_at{
     background-color: $color1;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .16), 0 0 10px 0 rgba(0, 0, 0, .12);
     color: $color3;
+    line-height: 1;
+    padding: 8px;
     text-align: center;
     &__day{
       font-size: 16px;
       font-weight: 700;
     }
     &__month-year{
-      font-size: 12px;
+      font-size: 10px;
       font-weight: 300;
-      padding: 0 2px;
+      margin-top: 8px;
     }
   }
 }

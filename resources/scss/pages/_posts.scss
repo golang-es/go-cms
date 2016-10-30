@@ -1,0 +1,15 @@
+.page-posts{
+  .post{
+    position: relative;
+    .post-metadata{
+      background-color: rgba($color3, .5);
+      border: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+}
