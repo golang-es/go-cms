@@ -16,13 +16,14 @@ body:not(.page-login){
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
   &__appname{
     font-family: "Oswald";
-    font-size: 18px;
+    font-size: 1rem;
   }
   &__menu{
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.11rem;
   }
   a{
     color: $color3;

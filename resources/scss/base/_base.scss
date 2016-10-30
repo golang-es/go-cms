@@ -8,6 +8,7 @@ a:hover{
   text-decoration: none;
 }
 body{
+  background-color: $color3;
   color: $color1;
   display: flex;
   flex-direction: column;
@@ -15,12 +16,14 @@ body{
   font-size: 1rem;
   font-weight: 300;
   justify-content: space-between;
+  line-height: 1;
   margin: 0;
   min-height: 100vh;
   padding: 0;
 }
 footer{
   background-color: $color1;
+  box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, .16), 0 -2px 10px 0 rgba(0, 0, 0, .12);
   color: $color3;
 }
 form{
@@ -29,25 +32,25 @@ form{
 h1,h2,h3{
   color: $color4;
   font-family: "Oswald";
-  font-size: 24px;
+  font-size: 1.33rem;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
 }
 h2{
   font-family: "Merriweather";
-  font-size: 18px;
+  font-size: 1.12rem;
   border-bottom: 1px solid $color4;
   font-style: italic;
   padding-bottom: 4px;
   padding-top: 0.5em;
 }
 h3{
-  font-size: 16px;
+  font-size: 1rem;
 }
 html{
-  font-size: 16px;
+  font-size: 18px;
 }
 img{
   display: block;
@@ -69,6 +72,9 @@ textarea{
     color: lighten($color5, 30%);
     font-weight: 300;
   }
+}
+p{
+  line-height: 1.5;
 }
 textarea{
   height: 20em;
