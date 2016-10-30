@@ -1,7 +1,7 @@
 .pagination{
   display: flex;
   justify-content: space-between;
-  margin: 2.6rem auto;
+  margin: 2rem auto;
 
   @include from(400px){
     justify-content: center;
