@@ -28,11 +28,13 @@ _obj
 docs/
 node_modules/
 resources/icons/
+_test/
 
 
 ##
 # Files
 #
+config/connection.json
+database/migrations/go-cms.sql
 public/css/styles.css
 public/css/styles.css.map
-config/connection.json
