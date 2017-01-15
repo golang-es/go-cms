@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	newRol := &models.Rol{Name:"Desde DAO"}
+	newRol := &models.Rol{Name: "Desde DAO"}
 	executedao.InsertRol(newRol)
 	fmt.Println(newRol)
 	rol, _ := executedao.GetByIDRol(1)

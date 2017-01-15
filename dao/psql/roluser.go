@@ -2,7 +2,7 @@ package psql
 
 import "github.com/golang-es/go-cms/models"
 
-type RolUserDAOPSQL struct {}
+type RolUserDAOPSQL struct{}
 
 // InsertRolUser inserta un regsitro en la bd
 func (r RolUserDAOPSQL) InsertRolUser(ru *models.RoleUser) error {

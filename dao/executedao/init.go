@@ -16,8 +16,8 @@ var (
 	moduleRolDAO    interfaces.ModuleRolDAO
 	postDAO         interfaces.PostDAO
 	rolDAO          interfaces.RolDAO
-	rolUserDAO		interfaces.RolUserDAO
-	userDAO			interfaces.UserDAO
+	rolUserDAO      interfaces.RolUserDAO
+	userDAO         interfaces.UserDAO
 )
 
 func init() {

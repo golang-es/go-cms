@@ -9,12 +9,12 @@ import (
 
 var (
 	// Config Configuración de la conexión
-	Config *configuration
+	Config         *configuration
 	pathFileConfig = "./config/connection.json"
-	once   sync.Once
+	once           sync.Once
 )
 
-func SetPathFileConfig(path string)  {
+func SetPathFileConfig(path string) {
 	pathFileConfig = path
 }
 

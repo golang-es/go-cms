@@ -2,7 +2,7 @@ package psql
 
 import "github.com/golang-es/go-cms/models"
 
-type UserDAOPSQL struct {}
+type UserDAOPSQL struct{}
 
 // InsertUser inserta un registro en la bd
 func (u UserDAOPSQL) InsertUser(user *models.User) error {

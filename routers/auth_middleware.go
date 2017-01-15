@@ -2,7 +2,6 @@ package routers
 
 import (
 	"github.com/golang-es/go-cms/common"
-	"github.com/golang-es/go-cms/controllers"
 
 	"github.com/gorilla/mux"
 	"github.com/urfave/negroni"

@@ -1,11 +1,11 @@
 package routers
 
 import (
-	"github.com/gorilla/mux"
 	"github.com/golang-es/go-cms/controllers"
+	"github.com/gorilla/mux"
 )
 
-func SetPostRouters(router *mux.Router) *mux.Router  {
+func SetPostRouters(router *mux.Router) *mux.Router {
 	//Rutas que necesitan autentificación
 	router.HandleFunc("/admin/posts/new", controllers.NewPost).Methods("GET")
 	router.HandleFunc("/admin/posts/edit/{id}", controllers.EditPost).Methods("GET")

@@ -1,10 +1,8 @@
 package routers
 
 import (
-	"github.com/golang-es/go-cms/common"
 	"github.com/golang-es/go-cms/controllers"
 
-	"github.com/codegangsta/negroni"
 	"github.com/gorilla/mux"
 )
 
@@ -14,6 +12,4 @@ func SetUserRouter(router *mux.Router) *mux.Router {
 	router.HandleFunc("/login", controllers.Login).Methods("POST")
 
 	return router
-
-
 }
