@@ -1,32 +1,38 @@
+##
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
+#
 *.o
 *.a
 *.so
 main
+*.exe
 
-# Folders
-_obj
-.idea/
-docs/
-node_modules/
-resources/icons/
 
-# Files compiles gulp
-public/css/styles.css
-public/css/styles.css.map
-
+##
 # Architecture specific extensions/prefixes
+#
 *.[568vq]
 [568vq].out
-
 *.cgo1.go
 *.cgo2.c
 _cgo_defun.c
 _cgo_gotypes.go
 _cgo_export.*
 
-_testmain.go
 
-*.exe
-*.test
-*.prof
+##
+# Folders
+#
+_obj
+.idea/
+docs/
+node_modules/
+resources/icons/
+
+
+##
+# Files
+#
+public/css/styles.css
+public/css/styles.css.map
+config/connection.json
