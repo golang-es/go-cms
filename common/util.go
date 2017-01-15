@@ -1,7 +1,9 @@
 package common
 
 import (
+	"crypto/sha256"
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 )
@@ -32,4 +34,10 @@ func DisplayAppError(w http.ResponseWriter, handlerError error, message string, 
 		w.Write(j)
 	}
 
+}
+
+// PasswordSha256 retorna el password codificado
+func PasswordSha256(password string) (p string) {
+	p = fmt.Sprintf("%x", sha256.Sum256([]byte(password)))
+	return
 }
