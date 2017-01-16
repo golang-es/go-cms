@@ -6,7 +6,7 @@ type RolUserDAOPSQL struct{}
 
 // InsertRolUser inserta un regsitro en la bd
 func (r RolUserDAOPSQL) InsertRolUser(ru *models.RoleUser) error {
-	query := "INSERT INTO role_user (role_id, user_id) VALUES ($1, $1) RETURNING id, created_at, updated_at"
+	query := "INSERT INTO role_user (role_id, user_id) VALUES ($1, $2) RETURNING id, created_at, updated_at"
 	db := get()
 	defer db.Close()
 

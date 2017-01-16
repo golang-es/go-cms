@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/codegangsta/negroni"
+	"github.com/urfave/negroni"
 
 	"github.com/golang-es/go-cms/common"
 	"github.com/golang-es/go-cms/database"
