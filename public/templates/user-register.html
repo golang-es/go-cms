@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>GoCMS - Registro de usuario</title>
+</head>
+<body>
+    <h1>Registro de usuario</h1>
+    <form action="/register" method="post">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name">
+        <label for="lastname">Apellido</label>
+        <input type="text" id="lastname" name="lastname">
+        <label for="email">Correo</label>
+        <input type="email" id="email" name="email">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password">
+        <button>Registrar</button>
+    </form>
+    <div class="message">{{.ID}}</div>
+</body>
+</html>

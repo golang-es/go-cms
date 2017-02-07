@@ -36,5 +36,4 @@ _test/
 #
 config/connection.json
 database/migrations/go-cms.sql
-public/css/styles.css
-public/css/styles.css.map
+public/css/

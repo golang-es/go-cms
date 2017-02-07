@@ -13,7 +13,7 @@ func SetPostRouters(router *mux.Router) *mux.Router {
 	router.HandleFunc("/admin/posts/save/{id}", controllers.SaveEditedPost).Methods("PUT")
 	router.HandleFunc("/admin/posts/delete/{id}", controllers.DeletePost).Methods("DELETE")
 	//Ruta Publica
-	router.HandleFunc("/{slug}", controllers.ShowPost).Methods("GET")
+	// router.HandleFunc("/{slug}", controllers.ShowPost).Methods("GET")
 
 	return router
 
